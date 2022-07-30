@@ -16,7 +16,7 @@ class Spammer(object):
 			print(Fore.RED + str(i))
 	##
 	def spam():
-		with open(r'C:\Users\Jesewe\Downloads\RFT\RFT.txt', encoding = 'latin-1') as file:
+		with open(r'C:\Users\User\Downloads\RFT\RFT.txt', encoding = 'latin-1') as file:
 			for j in file:
 				pyautogui.typewrite(j)
 				pyautogui.press('enter')
