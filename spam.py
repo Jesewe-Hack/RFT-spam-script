@@ -32,7 +32,8 @@ class Spammer(object):
 '''
 		label = pyautogui.alert(text=text_, button = 'OK', title='Справка')
 		if label == 'OK':
-			dub_confirm = pyautogui.confirm('какую функцию вы хотите использовать?', buttons = ['Spammer', 'Cancel'], title='Выбор фунции')
+			dub_confirm = pyautogui.confirm('какую функцию вы хотите использовать?',  \
+							buttons = ['Spammer', 'Отмена'], title='Выбор фунции')
 			if dub_confirm == 'Spammer':
 				reverse_counter()
 				spam()
