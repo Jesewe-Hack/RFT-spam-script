@@ -44,4 +44,4 @@ class Spammer(object):
 		spam()
 	##
 	else:
-		sys.ex
+		sys.exit
