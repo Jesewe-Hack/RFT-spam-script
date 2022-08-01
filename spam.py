@@ -1,12 +1,13 @@
+# импортирование модулей
 import pyautogui
 from time import sleep
 from colorama import init, Fore
 import sys
 ##
-init()
+init() # вызов функции для корректного цветного вывода модуля "colorama" 
 ##
-pyautogui.PAUSE = 0.1
-pyautogui.FAILSAFE = True
+pyautogui.PAUSE = 0.1 # задержка в 0.1 секунд
+pyautogui.FAILSAFE = True # экстренное завершение работы при наведении курсора в левый-верхний угол экрана
 ##
 class Spammer(object):
 	##
