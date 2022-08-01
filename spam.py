@@ -10,39 +10,45 @@ pyautogui.FAILSAFE = True
 ##
 class Spammer(object):
 	##
-	def reverse_counter():
+	def reverse_counter(): # отвечает за обратный отсчёт
 		for i in range(5, -1, -1):
 			sleep(1)
 			print(Fore.RED + str(i))
 	##
-	def spam():
-		with open(r'C:\Users\User\Downloads\RFT\RFT.txt', encoding = 'latin-1') as file:
+	def spam(): # отвечает за спам
+		with open(r'C:\Users\User\Downloads\RFT\RFT.txt', 'r',encoding = 'latin-1') as file: # считывание файла RFT.txt
 			for j in file:
-				pyautogui.typewrite(j)
-				pyautogui.press('enter')
+				pyautogui.typewrite(j) # автоматический ввод текста(поставить в графу ввода текста)
+				pyautogui.press('enter') # отправка сообщения(или спуск на новую строку если вы его запустили в редакторе текста)
 	##
 	pyautogui.alert(text='Вас приветствует \"f0rk1l spam script\"', button='Начать работу')
-	confirm = pyautogui.confirm(text='Какую функцию вы хотите использовать?', buttons=['Spammer', 'Справка', 'Отмена'], title='Выбор фунции')
+	confirm = pyautogui.confirm(text='Какую функцию вы хотите использовать?', \
+				    buttons=['Spammer', 'Справка', 'Отмена'], \
+				    title='Выбор фунции') # выбор функци
 	##
 	if confirm == 'Справка':
 		text_ = '''
-это спам-скроипт который спамит текстом bee movie script.
+это спам-скрипт который спамит текстом \"bee movie script\".
 Но если вы хотите использовать другой текст то измените файл \"RFT.txt\"(текст обязательно должен быть на английском для корректного вывода).
 Для дострочного завершения работы программы наведите курсор в левый верхний угол экрана.
+
 '''
-		label = pyautogui.alert(text=text_, button = 'OK', title='Справка')
+	# вывод справки и дальнейший выбор действий
+		label = pyautogui.alert(text=text_, \
+					button = 'OK', \
+					title='Справка') # вывод справки(для дальнейшего выбора действий нажминте на "OK")
 		if label == 'OK':
 			dub_confirm = pyautogui.confirm('какую функцию вы хотите использовать?',  \
-							buttons = ['Spammer', 'Отмена'], title='Выбор фунции')
+							buttons = ['Spammer', 'Отмена'], title='Выбор фунции') # выбор дальнейших действий после получения справки
 			if dub_confirm == 'Spammer':
-				reverse_counter()
-				spam()
+				reverse_counter() # запуск обратного отчёта(обратный отчёт выводится в консоль)
+				spam() # запуск спам-скрипта
 			else:
-				sys.exit()
+				sys.exit() # завершение работы программы
 	##
 	elif confirm == 'Spammer':
-		reverse_counter()
-		spam()
+		reverse_counter() # запуск обратного отчёта(обратный отчёт выводится в консоль)
+		spam() # запуск спам-скрипта
 	##
 	else:
-		sys.exit
+		sys.exit # завершение работы программы
