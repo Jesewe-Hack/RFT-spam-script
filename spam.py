@@ -1,4 +1,4 @@
-# импортирование модулей
+# импортирование необходимых модулей
 import pyautogui
 from time import sleep
 from colorama import init, Fore
