@@ -1,2 +1,5 @@
 colorama
 pyautogui
+os
+keyboard
+ctypes
