@@ -1,5 +1,4 @@
 import keyboard as k
-import webbrowser
 import time
 import ctypes
 from colorama import init, Fore
