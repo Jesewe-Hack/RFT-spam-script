@@ -1,17 +1,17 @@
-Приветствую.
----------------------------------------------------------------
-Данный софт является продвинутым вариантом спам-скрипта,
-не думаю что за интерфейс нужно пояснять, он и так интуитивно понятен.
----------------------------------------------------------------
-Вкраце про работу скрипта: 
-после активации у вас будет 5 секунд на то, чтобы запустить желаемую вами программу.
-После запуска и наведения курсора на поле ввода спам-скрипт сам начнёт вписывать и отправлять 
-сообщения из текста заготовленного в файле "RFT.txt".
-----------------------------------------------------------------
-Как запустить скрипт?:
-Запустите прилагающийся exe файл от имени администратора(файл "RFT.txt" должен находиться в одном каталоге
-с самим exe файлом, иначе софт выдаст ошибку)
-----------------------------------------------------------------
-Конец Документации
+# About RFT 2
+This software is an advanced version of the spam script, I don't think that the interface needs to be explained, it is already intuitive
 
-Автор: f0rk1l | Проект: Jesewe Hack
+# Briefly about the work of the script:
+
+After activation, you will have 5 seconds to run the program you want. After launching and hovering the cursor over the input field, the spam script itself will start entering and sending messages from the text prepared in the 'messages.txt' file. 
+
+# Latest updates:
+### Version 2.0 Changelog:
+- Changed script code
+### Version 1.0 Changelog:
+- Add GUI
+
+# Information
+Author: f0rk1l
+- You can support our projects here : https://www.donationalerts.com/r/jesewe
+- Our website: https://bit.ly/jesewehack
