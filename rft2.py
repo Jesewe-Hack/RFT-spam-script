@@ -10,7 +10,7 @@ ctypes.windll.kernel32.SetConsoleTitleW('RFT SPAM 2 | By f0rk1l | Edited by Jese
 def spam():
     while True:
         try:
-            with open(r'messages.txt', 'r',encoding='latin-1') as file: # считывание файла
+            with open(r'messages.txt', 'r',encoding='UTF-8') as file: # считывание файла
                 for t in file:
                     k.write(t, 0.02)
                     k.send("enter")
